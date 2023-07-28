@@ -1,7 +1,14 @@
+# docker files
 Dockerfile
 .dockerignore
+
+# dependencies
 node_modules
+
+# debug
 npm-debug.log
+
+# other
 README.md
 .next
 .git
