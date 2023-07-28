@@ -23,6 +23,7 @@ export const useMapFocus = (map: Map | undefined, mapRef: MutableRefObject<HTMLD
       // set map target to undefined
       map.setTarget(undefined);
     };
+
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [map]);
 };
