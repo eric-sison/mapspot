@@ -7,7 +7,7 @@ const BasicMapLoader = dynamic(
   {
     loading: () => <>Loading...</>,
     ssr: false,
-  }
+  },
 );
 
 export default function Home() {

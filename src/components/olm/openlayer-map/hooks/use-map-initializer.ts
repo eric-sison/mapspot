@@ -18,7 +18,7 @@ import View from "ol/View";
  */
 export const useMapInitializer = (
   mapOptions: Omit<OpenLayerMapProps, "children">,
-  mapRef: MutableRefObject<HTMLDivElement>
+  mapRef: MutableRefObject<HTMLDivElement>,
 ) => {
   // access setMap and removeMap functions from the global store
   const { setMap, removeMap } = useMapStore((state) => state);
