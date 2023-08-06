@@ -2,13 +2,13 @@
 
 import { FunctionComponent } from "react";
 import { useMap, OpenLayerMap } from "../../../olm/openlayer-map";
-import { useMapFocus } from "../../../olm/openlayer-map/hooks/use-map-focus";
+import { useMapFocusOnload } from "../../../olm/openlayer-map/hooks/use-map-focus";
 import { getBasicMapLayers } from "../utils/layers";
 
 export const BasicMap: FunctionComponent = () => {
   const { map, mapRef } = useMap();
 
-  useMapFocus(map, mapRef);
+  useMapFocusOnload(map, mapRef);
 
   return (
     <OpenLayerMap

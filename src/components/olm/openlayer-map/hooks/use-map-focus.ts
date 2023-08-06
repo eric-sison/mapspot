@@ -11,7 +11,7 @@ import { Map } from "ol";
  * @param mapRef The parent `div` that contains the map object.
  *
  */
-export const useMapFocus = (map: Map | undefined, mapRef: MutableRefObject<HTMLDivElement> | undefined) => {
+export const useMapFocusOnload = (map: Map | undefined, mapRef: MutableRefObject<HTMLDivElement> | undefined) => {
   useEffect(() => {
     // if current map instance is null
     if (map === undefined) return;
