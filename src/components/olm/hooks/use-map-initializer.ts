@@ -10,11 +10,11 @@ import View from "ol/View";
  *
  * Initializes a new instance of a `Map` object.
  *
- * @param mapRef The parent `div` that contains the map object.
+ * @param mapRef The parent `div` that will contain the map object to be rendered.
  *
  * @param mapOptions The options to be passed to initialize a new `Map` object.
  *
- * @link To learn more about the `Map` object, visit: https://openlayers.org/en/latest/apidoc/module-ol_Map-Map.html
+ * @link To learn more about the `Map` object, please visit: https://openlayers.org/en/latest/apidoc/module-ol_Map-Map.html
  */
 export const useMapInitializer = (
   mapOptions: Omit<OpenLayerMapProps, "children">,
@@ -110,7 +110,7 @@ export const useMapInitializer = (
       // unset the map target, which is the mapRef
       initialMap.setTarget(undefined);
 
-      // set the value of mapRef and map to undefined
+      // set the value of map to undefined
       removeMap();
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
