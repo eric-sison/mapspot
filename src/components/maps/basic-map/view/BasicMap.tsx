@@ -1,8 +1,8 @@
 "use client";
 
 import { FunctionComponent } from "react";
-import { useMap, OpenLayerMap } from "../../../olm/openlayer-map";
-import { useMapFocusOnload } from "../../../olm/openlayer-map/hooks/use-map-focus";
+import { useMap, OpenLayerMap } from "../../../olm";
+import { useMapFocusOnload } from "../../../olm/hooks/use-map-focus";
 import { getBasicMapLayers } from "../utils/layers";
 
 export const BasicMap: FunctionComponent = () => {
