@@ -13,6 +13,7 @@
     "node": ">=18.0.0"
   },
   "dependencies": {
+    "framer-motion": "^10.16.0",
     "next": "13.4.16",
     "ol": "^7.5.1",
     "react": "18.2.0",
