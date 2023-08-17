@@ -5,4 +5,5 @@ export type DefaultLayer = {
   alt: string;
   name: string;
   baseLayer: BaseLayer;
+  isVisible: boolean;
 };
