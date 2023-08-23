@@ -2,6 +2,7 @@ import "../styles/tailwind.css";
 import "../../node_modules/ol/ol.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { MyQueryClientProvider } from "../components/utils/MyQueryClientProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -12,8 +13,12 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
-    </html>
+    <>
+      <html lang="en">
+        <body className={inter.className}>
+          <MyQueryClientProvider>{children}</MyQueryClientProvider>
+        </body>
+      </html>
+    </>
   );
 }

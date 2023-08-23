@@ -1,10 +1,13 @@
 import { Map } from "ol";
+import TileLayer from "ol/layer/Tile";
 import { MutableRefObject } from "react";
 import { create } from "zustand";
 
 type MapStore = {
   map: Map | undefined;
   mapRef: MutableRefObject<HTMLDivElement> | undefined;
+  defaultLayers: Array<TileLayer<any>>;
+  setDefaultLayers: (layer: TileLayer<any>[]) => void;
   setMap: (map: Map, mapRef: MutableRefObject<HTMLDivElement>) => void;
   removeMap: () => void;
 };
@@ -27,6 +30,8 @@ type MapStore = {
 export const useMapStore = create<MapStore>((set) => ({
   map: undefined,
   mapRef: undefined,
+  defaultLayers: [],
+  setDefaultLayers: (defaultLayers) => set({ defaultLayers }),
   setMap: (map, mapRef) => set({ map, mapRef }),
   removeMap: () => set({ map: undefined }),
 }));

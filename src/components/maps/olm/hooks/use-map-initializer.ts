@@ -100,6 +100,9 @@ export const useMapInitializer = (
       overlays,
     });
 
+    // as soon as the map has been initialized and rendered, capture the focus to make the map interactible
+    initialMap.once("postrender", () => mapRef.current.focus());
+
     // set the new map instance by mutating the state from the global store.
     setMap(initialMap, mapRef);
 

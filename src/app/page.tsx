@@ -1,19 +1,14 @@
 "use client";
 
-import dynamic from "next/dynamic";
+import { useQueryClientDevTools } from "../hooks/store/use-query-client-dev-tools-store";
 
-const BasicMapLoader = dynamic(
-  () => import("@ericsison/mapspot/components/maps/basic-map/view/BasicMap").then((component) => component.BasicMap),
-  {
-    loading: () => <>Loading...</>,
-    ssr: false,
-  },
-);
+export default function Index() {
+  const showDevTools = useQueryClientDevTools((state) => state.showDevTools);
+  const setShowDevTools = useQueryClientDevTools((state) => state.setShowDevTools);
 
-export default function Home() {
   return (
-    <main className="h-screen w-screen flex items-center justify-center">
-      <BasicMapLoader />
-    </main>
+    <>
+      <button onClick={() => setShowDevTools(!showDevTools)}>toggle dev tools on prod</button>
+    </>
   );
 }
