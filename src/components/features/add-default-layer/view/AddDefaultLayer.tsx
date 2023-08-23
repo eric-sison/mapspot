@@ -1,9 +1,9 @@
 "use client";
 
-import { useBingLayer } from "@ericsison/mapspot/hooks/use-bing-layer";
-import { useOsmLayer } from "@ericsison/mapspot/hooks/use-osm-layer";
+import { useBingLayer } from "@ericsison/mapspot/hooks/map/use-bing-layer";
+import { useLayer } from "@ericsison/mapspot/hooks/map/use-layer";
+import { useOsmLayer } from "@ericsison/mapspot/hooks/map/use-osm-layer";
 import { FunctionComponent } from "react";
-import { useLayer } from "@ericsison/mapspot/hooks/use-layer";
 
 export const AddDefaultLayer: FunctionComponent = () => {
   const { addLayer } = useLayer();
