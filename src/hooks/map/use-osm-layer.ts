@@ -1,6 +1,6 @@
+import { OSMLayerOptions } from "@ericsison/mapspot/types/osm-layer-options";
 import TileLayer from "ol/layer/Tile";
 import OSM from "ol/source/OSM";
-import { OSMLayerOptions } from "../types/osm-layer-options";
 
 export const useOsmLayer = (options: OSMLayerOptions) => {
   const {

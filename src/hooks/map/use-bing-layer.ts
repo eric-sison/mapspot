@@ -1,5 +1,5 @@
 import TileLayer from "ol/layer/Tile";
-import { BingLayerOptions } from "../types/bing-layer-options";
+import { BingLayerOptions } from "../../types/bing-layer-options";
 import BingMaps from "ol/source/BingMaps";
 
 export const useBingLayer = (options: BingLayerOptions) => {

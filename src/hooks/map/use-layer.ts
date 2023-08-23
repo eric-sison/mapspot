@@ -1,5 +1,5 @@
+import { useMapStore } from "@ericsison/mapspot/components/maps/olm/hooks/use-map-store";
 import TileLayer from "ol/layer/Tile";
-import { useMapStore } from "../components/maps/olm/hooks/use-map-store";
 
 export const useLayer = () => {
   // current value of defaultLayers
