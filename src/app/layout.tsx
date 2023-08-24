@@ -1,8 +1,9 @@
 import "../styles/tailwind.css";
 import "../../node_modules/ol/ol.css";
-import type { Metadata } from "next";
+
 import { Inter } from "next/font/google";
 import { MyQueryClientProvider } from "../components/utils/MyQueryClientProvider";
+import type { Metadata } from "next";
 
 const inter = Inter({ subsets: ["latin"] });
 
