@@ -1,4 +1,4 @@
-import { useMapStore } from "@ericsison/mapspot/components/maps/olm/hooks/use-map-store";
+import { useMapStore } from "@ericsison/mapspot/components/maps/olm/hooks/useMapStore";
 import TileLayer from "ol/layer/Tile";
 
 export const useLayer = () => {

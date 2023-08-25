@@ -1,4 +1,4 @@
-import { OSMLayerOptions } from "@ericsison/mapspot/types/osm-layer-options";
+import { OSMLayerOptions } from "@ericsison/mapspot/types/osmLayerOptions";
 import TileLayer from "ol/layer/Tile";
 import OSM from "ol/source/OSM";
 
