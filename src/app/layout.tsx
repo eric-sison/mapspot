@@ -2,7 +2,7 @@ import "../styles/tailwind.css";
 import "../../node_modules/ol/ol.css";
 
 import { Inter } from "next/font/google";
-import { MyQueryClientProvider } from "../components/utils/MyQueryClientProvider";
+import { MyQueryClientProvider } from "../components/utils/view/MyQueryClientProvider";
 import type { Metadata } from "next";
 
 const inter = Inter({ subsets: ["latin"] });

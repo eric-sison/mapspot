@@ -1,6 +1,6 @@
 "use client";
 
-import { AddDefaultLayer } from "@ericsison/mapspot/components/features/add-default-layer/view/AddDefaultLayer";
+import { AddDefaultLayer } from "@ericsison/mapspot/components/features/AddDefaultLayer/view/AddDefaultLayer";
 import { useMap } from "@ericsison/mapspot/components/maps/olm";
 import { useRouter } from "next/navigation";
 

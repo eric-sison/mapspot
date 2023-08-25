@@ -2,7 +2,7 @@
 
 import { MutableRefObject, useEffect } from "react";
 import { OpenLayerMapProps } from "../utils/openlayer-map-props";
-import { useMapStore } from "./use-map-store";
+import { useMapStore } from "./useMapStore";
 import { Map } from "ol";
 import View from "ol/View";
 

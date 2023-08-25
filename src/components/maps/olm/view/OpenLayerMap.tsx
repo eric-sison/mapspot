@@ -1,8 +1,19 @@
 "use client";
 
-import { FunctionComponent, MutableRefObject, useRef } from "react";
-import { OpenLayerMapProps } from "../utils/openlayer-map-props";
-import { useMapInitializer } from "../hooks/use-map-initializer";
+import { FunctionComponent, MutableRefObject, ReactNode, useRef } from "react";
+import { useMapInitializer } from "../hooks/useMapInitializer";
+import { MapOptions } from "ol/Map";
+import { ViewOptions } from "ol/View";
+
+type OpenLayerMapProps = ViewOptions &
+  Pick<
+    MapOptions,
+    "keyboardEventTarget" | "layers" | "maxTilesLoading" | "moveTolerance" | "pixelRatio" | "overlays"
+  > & {
+    children?: ReactNode | ReactNode[];
+    defaultInteractions?: boolean;
+    defaultControls?: boolean;
+  };
 
 export const OpenLayerMap: FunctionComponent<OpenLayerMapProps> = ({ children, ...mapOptions }) => {
   // initialize mapRef that will contain the map object, where it will be rendered.

@@ -2,7 +2,7 @@
 
 import { FunctionComponent } from "react";
 import { OpenLayerMap, useMap } from "../../olm";
-import { LayerSwitcher } from "@ericsison/mapspot/components/controls/layer-switcher/views/LayerSwitcher";
+import { LayerSwitcher } from "@ericsison/mapspot/components/controls/LayerSwitcher/views/LayerSwitcher";
 
 export const MapSpot: FunctionComponent = () => {
   const { map, defaultLayers } = useMap();

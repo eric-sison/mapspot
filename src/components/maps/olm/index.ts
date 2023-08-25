@@ -1,2 +1,2 @@
-export * from "./hooks/use-map";
+export * from "./hooks/useMap";
 export * from "./view/OpenLayerMap";

@@ -5,7 +5,7 @@ import dynamic from "next/dynamic";
 import { FunctionComponent, ReactNode, useEffect, useState } from "react";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
-import { useQueryClientDevTools } from "@ericsison/mapspot/hooks/store/use-query-client-dev-tools-store";
+import { useQueryClientDevTools } from "../hooks/useQueryClientDevToolsStore";
 
 type QueryClientProps = {
   children: ReactNode;
