@@ -1,6 +1,6 @@
 "use client";
 
-import { useQueryClientDevTools } from "../hooks/store/use-query-client-dev-tools-store";
+import { useQueryClientDevTools } from "../components/utils/hooks/useQueryClientDevToolsStore";
 
 export default function Index() {
   const showDevTools = useQueryClientDevTools((state) => state.showDevTools);
